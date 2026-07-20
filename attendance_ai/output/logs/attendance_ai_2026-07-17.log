@@ -1,0 +1,1407 @@
+2026-07-17 14:50:01 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 14:50:01 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 14:50:01 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 14:51:10 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 14:51:10 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 14:51:10 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 14:52:23 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 14:52:23 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 14:52:23 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en)
+2026-07-17 14:53:25 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 14:53:25 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 14:53:25 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 14:56:43 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 14:56:43 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 14:56:43 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en)
+2026-07-17 14:56:46 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 14:56:46 | INFO     | __main__:process_image:80 - Processing Image: page_10.png
+2026-07-17 14:56:46 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for page_10.png (Page 1)
+2026-07-17 14:56:46 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 14:56:47 | ERROR    | __main__:process_image:87 - Failed to process Image page_10.png: OpenCV(4.10.0) :-1: error: (-5:Bad argument) in function 'cvtColor'
+> Overload resolution failed:
+>  - Argument 'code' is required to be an integer
+>  - Argument 'code' is required to be an integer
+
+2026-07-17 14:56:47 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 14:56:47 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 14:58:13 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 14:58:13 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 14:58:13 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en)
+2026-07-17 14:58:16 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 14:58:16 | INFO     | __main__:process_image:80 - Processing Image: page_10.png
+2026-07-17 14:58:16 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for page_10.png (Page 1)
+2026-07-17 14:58:16 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 14:58:16 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 14:58:16 | DEBUG    | src.table.detector:detect:49 - Found table at x=372, y=0, w=1090, h=1262
+2026-07-17 14:58:16 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 14:58:16 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 14:58:16 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for page_10.png page 1
+2026-07-17 14:58:16 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:16 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:16 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:16 | DEBUG    | __main__:_process_single_image:151 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | DEBUG    | __main__:_process_single_image:151 - Row 1: None -> Present (Non-empty Unknown)
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | DEBUG    | __main__:_process_single_image:151 - Row 2: None -> Present (Non-empty Unknown)
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | DEBUG    | __main__:_process_single_image:151 - Row 3: None -> Present (Non-empty Unknown)
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | DEBUG    | __main__:_process_single_image:151 - Row 4: None -> Present (Non-empty Unknown)
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: PaddleOCR.predict() got an unexpected keyword argument 'cls'
+2026-07-17 14:58:17 | DEBUG    | __main__:_process_single_image:151 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 14:58:17 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 14:58:17 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 14:59:33 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 14:59:33 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 14:59:33 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en)
+2026-07-17 14:59:36 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 14:59:36 | INFO     | __main__:process_image:80 - Processing Image: page_10.png
+2026-07-17 14:59:36 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for page_10.png (Page 1)
+2026-07-17 14:59:36 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 14:59:36 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 14:59:36 | DEBUG    | src.table.detector:detect:49 - Found table at x=372, y=0, w=1090, h=1262
+2026-07-17 14:59:36 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 14:59:36 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 14:59:36 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for page_10.png page 1
+2026-07-17 14:59:38 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:39 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:40 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:40 | DEBUG    | __main__:_process_single_image:151 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 14:59:41 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:43 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:44 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:44 | DEBUG    | __main__:_process_single_image:151 - Row 1: None -> Present (Non-empty Unknown)
+2026-07-17 14:59:45 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:46 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:47 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:47 | DEBUG    | __main__:_process_single_image:151 - Row 2: None -> Present (Non-empty Unknown)
+2026-07-17 14:59:49 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:50 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:51 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:51 | DEBUG    | __main__:_process_single_image:151 - Row 3: None -> Present (Non-empty Unknown)
+2026-07-17 14:59:53 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:54 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:55 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:55 | DEBUG    | __main__:_process_single_image:151 - Row 4: None -> Present (Non-empty Unknown)
+2026-07-17 14:59:57 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:58 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:59 | ERROR    | src.ocr.engine:extract_text:42 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 14:59:59 | DEBUG    | __main__:_process_single_image:151 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 14:59:59 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 14:59:59 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:01:57 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:01:57 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:01:57 | INFO     | src.ocr.engine:__init__:21 - Initializing PaddleOCR (lang=en)
+2026-07-17 15:02:01 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:02:01 | INFO     | __main__:process_image:80 - Processing Image: page_10.png
+2026-07-17 15:02:01 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for page_10.png (Page 1)
+2026-07-17 15:02:01 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:02:01 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:02:01 | DEBUG    | src.table.detector:detect:49 - Found table at x=372, y=0, w=1090, h=1262
+2026-07-17 15:02:01 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:02:01 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:02:01 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for page_10.png page 1
+2026-07-17 15:02:02 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:03 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:04 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:04 | DEBUG    | __main__:_process_single_image:151 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:02:06 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:07 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:08 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:08 | DEBUG    | __main__:_process_single_image:151 - Row 1: None -> Present (Non-empty Unknown)
+2026-07-17 15:02:10 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:11 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:12 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:12 | DEBUG    | __main__:_process_single_image:151 - Row 2: None -> Present (Non-empty Unknown)
+2026-07-17 15:02:13 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:15 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:16 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:16 | DEBUG    | __main__:_process_single_image:151 - Row 3: None -> Present (Non-empty Unknown)
+2026-07-17 15:02:17 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:19 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:20 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:20 | DEBUG    | __main__:_process_single_image:151 - Row 4: None -> Present (Non-empty Unknown)
+2026-07-17 15:02:21 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:23 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:24 | ERROR    | src.ocr.engine:extract_text:48 - OCR Failed on cell: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\paddle\fluid\framework\new_executor\instruction\onednn\onednn_instruction.cc:118)
+
+2026-07-17 15:02:24 | DEBUG    | __main__:_process_single_image:151 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 15:02:24 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:02:24 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:09:16 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:09:16 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:09:16 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:09:49 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:09:49 | INFO     | __main__:process_image:80 - Processing Image: page_10.png
+2026-07-17 15:09:49 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for page_10.png (Page 1)
+2026-07-17 15:09:49 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:09:49 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:09:49 | DEBUG    | src.table.detector:detect:49 - Found table at x=372, y=0, w=1090, h=1262
+2026-07-17 15:09:49 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:09:49 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:09:49 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for page_10.png page 1
+2026-07-17 15:09:50 | DEBUG    | __main__:_process_single_image:151 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:09:50 | DEBUG    | __main__:_process_single_image:151 - Row 1: G5 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:09:50 | DEBUG    | __main__:_process_single_image:151 - Row 2: 3BCG10009 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:09:51 | DEBUG    | __main__:_process_single_image:151 - Row 3: riyanshu Kashyap -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:09:51 | DEBUG    | __main__:_process_single_image:151 - Row 4: 205 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:09:51 | DEBUG    | __main__:_process_single_image:151 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 15:09:51 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:09:51 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:11:46 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:11:46 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:11:46 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:11:47 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:11:47 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:11:47 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:11:47 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:11:47 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:11:47 | DEBUG    | src.table.detector:detect:49 - Found table at x=278, y=0, w=706, h=913
+2026-07-17 15:11:47 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:11:47 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:11:47 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for image.png page 1
+2026-07-17 15:11:47 | DEBUG    | __main__:_process_single_image:151 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:11:48 | DEBUG    | __main__:_process_single_image:151 - Row 1: G1 -> Review (Low Confidence)
+2026-07-17 15:11:48 | DEBUG    | __main__:_process_single_image:151 - Row 2: DA -> Review (Low Confidence)
+2026-07-17 15:11:49 | DEBUG    | __main__:_process_single_image:151 - Row 3: oyal Singh Rana -> Review (Low Confidence)
+2026-07-17 15:11:49 | DEBUG    | __main__:_process_single_image:151 - Row 4: 30 -> Review (Low Confidence)
+2026-07-17 15:11:49 | DEBUG    | __main__:_process_single_image:151 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 15:11:49 | INFO     | src.excel.generator:save:54 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:11:49 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:22:16 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:22:16 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:22:16 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:22:17 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:22:17 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:22:17 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:22:17 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:22:17 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:22:17 | DEBUG    | src.table.detector:detect:49 - Found table at x=278, y=0, w=706, h=913
+2026-07-17 15:22:17 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:22:17 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:22:17 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for image.png page 1
+2026-07-17 15:22:17 | DEBUG    | __main__:_process_single_image:158 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:22:18 | DEBUG    | __main__:_process_single_image:158 - Row 1: None -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:22:19 | DEBUG    | __main__:_process_single_image:158 - Row 2: None -> Present (Non-empty Unknown)
+2026-07-17 15:22:20 | DEBUG    | __main__:_process_single_image:158 - Row 3: anmoy Talukdar -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:22:20 | DEBUG    | __main__:_process_single_image:158 - Row 4: 801 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:22:21 | DEBUG    | __main__:_process_single_image:158 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 15:22:21 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:22:21 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:24:02 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:24:02 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:24:02 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:24:03 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:24:03 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:24:03 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:24:03 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:24:03 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:24:03 | DEBUG    | src.table.detector:detect:49 - Found table at x=278, y=0, w=706, h=913
+2026-07-17 15:24:03 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:24:03 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:24:03 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for image.png page 1
+2026-07-17 15:24:03 | DEBUG    | __main__:_process_single_image:158 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:24:04 | DEBUG    | __main__:_process_single_image:158 - Row 1: None -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:24:04 | DEBUG    | __main__:_process_single_image:158 - Row 2: None -> Present (Non-empty Unknown)
+2026-07-17 15:24:06 | DEBUG    | __main__:_process_single_image:158 - Row 3: anmoy Talukdar -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:24:06 | DEBUG    | __main__:_process_single_image:158 - Row 4: 801 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:24:06 | DEBUG    | __main__:_process_single_image:158 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 15:24:06 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:24:06 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:29:15 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:29:15 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:29:15 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:29:17 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:29:17 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:29:17 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:29:17 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:29:17 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:29:17 | DEBUG    | src.table.detector:detect:39 - Found table at x=278, y=23, w=785, h=793
+2026-07-17 15:29:17 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:29:17 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:29:17 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for image.png page 1
+2026-07-17 15:29:17 | DEBUG    | __main__:_process_single_image:158 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:29:17 | DEBUG    | __main__:_process_single_image:158 - Row 1: G1 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:29:18 | DEBUG    | __main__:_process_single_image:158 - Row 2: 3BA1702 -> Present (Non-empty Unknown)
+2026-07-17 15:29:19 | DEBUG    | __main__:_process_single_image:158 - Row 3: anmoy Talukdar -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:29:20 | DEBUG    | __main__:_process_single_image:158 - Row 4: 801 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:29:20 | DEBUG    | __main__:_process_single_image:158 - Row 5: None -> Present (Non-empty Unknown)
+2026-07-17 15:29:20 | ERROR    | src.excel.generator:save:66 - Failed to save Excel file: [Errno 13] Permission denied: 'output\\excel\\attendance_result.xlsx'
+2026-07-17 15:29:20 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:30:32 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:30:32 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:30:32 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:30:33 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:30:33 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:30:33 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:30:33 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:30:33 | DEBUG    | src.table.detector:detect:15 - Starting table detection
+2026-07-17 15:30:33 | DEBUG    | src.table.detector:detect:39 - Found table at x=278, y=23, w=786, h=794
+2026-07-17 15:30:33 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:30:33 | INFO     | src.row.extractor:extract:53 - Extracted 6 rows from table
+2026-07-17 15:30:33 | INFO     | __main__:_process_single_image:110 - Processing 6 rows for image.png page 1
+2026-07-17 15:30:33 | DEBUG    | __main__:_process_single_image:158 - Row 0: None -> Present (Non-empty Unknown)
+2026-07-17 15:30:34 | DEBUG    | __main__:_process_single_image:158 - Row 1: G1 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:30:34 | DEBUG    | __main__:_process_single_image:158 - Row 2: BAI702 -> Present (Non-empty Unknown)
+2026-07-17 15:30:36 | DEBUG    | __main__:_process_single_image:158 - Row 3: anmoy Talukdar -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:30:36 | DEBUG    | __main__:_process_single_image:158 - Row 4: 801 -> Present (Fallback (Handwriting/Name))
+2026-07-17 15:30:36 | DEBUG    | __main__:_process_single_image:158 - Row 5: None -> Review (Low Confidence)
+2026-07-17 15:30:36 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:30:36 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:33:34 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:33:34 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:33:34 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:33:36 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:33:36 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:33:36 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:33:36 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 15:33:36 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 15:33:36 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:33:36 | INFO     | src.row.extractor:extract:53 - Extracted 16 rows from table
+2026-07-17 15:33:36 | INFO     | __main__:_process_single_image:110 - Processing 16 rows for image.png page 1
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 0, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 15:33:36 | DEBUG    | __main__:_process_single_image:119 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 15:33:36 | ERROR    | src.excel.generator:save:66 - Failed to save Excel file: [Errno 13] Permission denied: 'output\\excel\\attendance_result.xlsx'
+2026-07-17 15:33:36 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:33:58 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:33:58 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 15:33:58 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:33:59 | INFO     | __main__:process_all:53 - Starting batch processing...
+2026-07-17 15:33:59 | INFO     | __main__:process_image:80 - Processing Image: image.png
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:90 - Running pipeline for image.png (Page 1)
+2026-07-17 15:33:59 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:33:59 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 15:33:59 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 15:33:59 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:33:59 | INFO     | src.row.extractor:extract:53 - Extracted 16 rows from table
+2026-07-17 15:33:59 | INFO     | __main__:_process_single_image:110 - Processing 16 rows for image.png page 1
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 0, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 15:33:59 | DEBUG    | __main__:_process_single_image:119 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 15:33:59 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:33:59 | INFO     | __main__:process_all:68 - Batch processing completed.
+2026-07-17 15:56:06 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:56:06 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 15:56:06 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:56:08 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 15:56:08 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 15:56:08 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:56:08 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 15:56:08 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 15:56:08 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:56:08 | INFO     | src.row.extractor:extract:53 - Extracted 16 rows from table
+2026-07-17 15:56:08 | INFO     | __main__:_process_single_image:112 - Processing 16 rows for image.png page 1
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 15:56:08 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 15:56:08 | ERROR    | src.excel.generator:save:66 - Failed to save Excel file: [Errno 13] Permission denied: 'output\\excel\\attendance_result.xlsx'
+2026-07-17 15:56:08 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 15:59:15 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 15:59:15 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 15:59:15 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 15:59:16 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 15:59:16 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 15:59:16 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 15:59:16 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 15:59:16 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 15:59:16 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 15:59:16 | INFO     | src.row.extractor:extract:54 - Extracted 20 rows from table
+2026-07-17 15:59:16 | INFO     | __main__:_process_single_image:112 - Processing 20 rows for image.png page 1
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (2 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (0 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (2 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (2 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (2 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (2 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (3 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (3 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (0 < 8)
+2026-07-17 15:59:16 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (0 < 8)
+2026-07-17 15:59:16 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 15:59:16 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:05:21 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:05:21 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:05:21 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:05:23 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:05:23 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:05:23 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:05:23 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:05:23 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:05:23 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:05:23 | INFO     | src.row.extractor:extract:54 - Extracted 20 rows from table
+2026-07-17 16:05:23 | INFO     | __main__:_process_single_image:112 - Processing 20 rows for image.png page 1
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (2 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (0 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (2 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (2 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (2 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (2 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (3 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (3 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (0 < 8)
+2026-07-17 16:05:23 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (0 < 8)
+2026-07-17 16:05:23 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:05:23 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:08:29 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:08:29 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:08:29 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:08:30 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:08:30 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:08:30 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:08:30 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:08:30 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:08:30 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:08:30 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:08:30 | INFO     | src.row.extractor:extract:54 - Extracted 7 rows from table
+2026-07-17 16:08:30 | INFO     | __main__:_process_single_image:112 - Processing 7 rows for image.png page 1
+2026-07-17 16:08:31 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:08:56 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:08:56 | INFO     | __main__:_process_single_image:172 - --- ROW 0 ---
+2026-07-17 16:08:56 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '', '', '', '', '']
+2026-07-17 16:08:56 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:08:56 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:08:56 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:08:57 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:09:05 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:09:05 | INFO     | __main__:_process_single_image:172 - --- ROW 1 ---
+2026-07-17 16:09:05 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '', '', '', '', '']
+2026-07-17 16:09:05 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:09:05 | INFO     | __main__:_process_single_image:175 - Attendance : Review [Low Confidence]
+2026-07-17 16:09:05 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:09:07 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:09:30 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '23BDA70059', 'S_G_No': '23BA170429', 'Groups': '23BAI70274', 'UID': '23BA17027', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:09:30 | INFO     | __main__:_process_single_image:172 - --- ROW 2 ---
+2026-07-17 16:09:30 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['23BDA70059 23BA170429 23BAI70274 23BA17027', '23BA170416 23BAI70175 23BDA70041 23BAI70295 23BDA70029 23BAI70650 23BAI70275 3BA170099', '23BAI70237 23BIS70067 23BAI70232 23BAI70260 3BAI7069', '3BAI70', '23BA170459', '', '3BAI706']
+2026-07-17 16:09:30 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '23BDA70059', 'S_G_No': '23BA170429', 'Groups': '23BAI70274', 'UID': '23BA17027', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:09:30 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Fallback (Handwriting/Name)]
+2026-07-17 16:09:30 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:09:30 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (2 < 8)
+2026-07-17 16:09:31 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:09:33 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:09:33 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:09:33 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:09:36 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:09:36 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:09:36 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:09:36 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:09:36 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:09:36 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:09:36 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:09:36 | INFO     | src.row.extractor:extract:58 - Extracted 1 rows from table
+2026-07-17 16:09:36 | INFO     | __main__:_process_single_image:112 - Processing 1 rows for image.png page 1
+2026-07-17 16:09:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:09:36 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:09:36 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:09:43 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': 'of', 'UID': '', 'Name': '', 'Room_No': 'of', 'Block': ''}
+2026-07-17 16:09:43 | INFO     | __main__:_process_single_image:172 - --- ROW 4 ---
+2026-07-17 16:09:43 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', 'of', '', '', 'of', '']
+2026-07-17 16:09:43 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': 'of', 'UID': '', 'Name': '', 'Room_No': 'of', 'Block': ''}
+2026-07-17 16:09:43 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:09:43 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:09:43 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:09:53 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': 'C', 'Groups': '', 'UID': '1', 'Name': 'C', 'Room_No': '1', 'Block': '1'}
+2026-07-17 16:09:53 | INFO     | __main__:_process_single_image:172 - --- ROW 5 ---
+2026-07-17 16:09:53 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', 'C', '', '', 'C', '1', '1']
+2026-07-17 16:09:53 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': 'C', 'Groups': '', 'UID': '1', 'Name': 'C', 'Room_No': '1', 'Block': '1'}
+2026-07-17 16:09:53 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:09:53 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:09:53 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:10:04 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:10:05 | INFO     | __main__:_process_single_image:172 - --- ROW 6 ---
+2026-07-17 16:10:05 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '', '', '', '', '']
+2026-07-17 16:10:05 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:10:05 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:10:05 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:10:05 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:10:05 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:10:06 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:10:06 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:10:06 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:10:08 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:10:08 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:10:08 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:10:08 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:10:08 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:10:08 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:10:08 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:10:08 | INFO     | src.row.extractor:extract:60 - Extracted 5 rows from table
+2026-07-17 16:10:08 | INFO     | __main__:_process_single_image:112 - Processing 5 rows for image.png page 1
+2026-07-17 16:10:08 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:10:20 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '20', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:10:20 | INFO     | __main__:_process_single_image:172 - --- ROW 0 ---
+2026-07-17 16:10:20 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '20', '', '', '', '']
+2026-07-17 16:10:20 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '20', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:10:20 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:10:20 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:10:20 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:10:28 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:10:28 | INFO     | __main__:_process_single_image:172 - --- ROW 1 ---
+2026-07-17 16:10:28 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '', '', '', '', '']
+2026-07-17 16:10:28 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:10:28 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:10:28 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:10:28 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (2 < 8)
+2026-07-17 16:10:30 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:10:49 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': 'of 301 301', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': 'o', 'Room_No': '301 301 301 301', 'Block': 'Room No 301 301 301 301'}
+2026-07-17 16:10:49 | INFO     | __main__:_process_single_image:172 - --- ROW 3 ---
+2026-07-17 16:10:49 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['of 301 301', '', '', '', 'o', '301 301 301 301', 'Room No 301 301 301 301']
+2026-07-17 16:10:49 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': 'of 301 301', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': 'o', 'Room_No': '301 301 301 301', 'Block': 'Room No 301 301 301 301'}
+2026-07-17 16:10:49 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Fallback (Handwriting/Name)]
+2026-07-17 16:10:49 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:10:49 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (2 < 8)
+2026-07-17 16:10:50 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:10:50 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:12:21 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:12:21 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:12:21 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:12:22 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:12:22 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:12:22 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:12:22 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:12:22 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:12:22 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:12:22 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:12:22 | INFO     | src.row.extractor:extract:69 - Extracted 1 rows from table
+2026-07-17 16:12:22 | INFO     | __main__:_process_single_image:112 - Processing 1 rows for image.png page 1
+2026-07-17 16:12:22 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (0 < 8)
+2026-07-17 16:12:22 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:12:22 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:12:52 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:12:52 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:12:52 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:12:53 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:12:53 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:12:53 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:12:53 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:12:53 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:12:53 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:12:53 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:12:53 | INFO     | src.row.extractor:extract:76 - Extracted 2 rows from table
+2026-07-17 16:12:53 | INFO     | __main__:_process_single_image:112 - Processing 2 rows for image.png page 1
+2026-07-17 16:12:53 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:13:02 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:13:02 | INFO     | __main__:_process_single_image:172 - --- ROW 0 ---
+2026-07-17 16:13:02 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '', '', '', '', '']
+2026-07-17 16:13:02 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:13:02 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:13:02 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:13:02 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (3 < 8)
+2026-07-17 16:13:02 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:13:02 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:13:38 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:13:38 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:13:38 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:13:39 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:13:39 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:13:39 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:13:39 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:13:39 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:13:39 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:13:39 | INFO     | src.row.extractor:extract:58 - Extracted 6 rows from table
+2026-07-17 16:13:39 | INFO     | __main__:_process_single_image:112 - Processing 6 rows for image.png page 1
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (1 < 8)
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (2 < 8)
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (2 < 8)
+2026-07-17 16:13:39 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:13:39 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:13:39 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:14:05 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:14:05 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:14:05 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:14:06 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:14:06 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:14:06 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:14:06 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:14:06 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:14:06 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:14:06 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:14:06 | INFO     | src.row.extractor:extract:58 - Extracted 0 rows from table
+2026-07-17 16:14:06 | WARNING  | __main__:_process_single_image:109 - No rows detected in image.png page 1
+2026-07-17 16:14:06 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:14:06 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:14:41 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:14:41 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:14:41 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:14:42 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:14:42 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:14:42 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:14:42 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:14:42 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:14:42 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:14:42 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:14:43 | INFO     | src.row.extractor:extract:69 - Extracted 3 rows from table
+2026-07-17 16:14:43 | INFO     | __main__:_process_single_image:112 - Processing 3 rows for image.png page 1
+2026-07-17 16:14:43 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:14:43 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:14:51 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:14:51 | INFO     | __main__:_process_single_image:172 - --- ROW 1 ---
+2026-07-17 16:14:51 | INFO     | __main__:_process_single_image:173 - Raw OCR    : ['', '', '', '', '', '', '']
+2026-07-17 16:14:51 | INFO     | __main__:_process_single_image:174 - AI Cleaned : {'S_No': '', 'S_G_No': '', 'Groups': '', 'UID': '', 'Name': '', 'Room_No': '', 'Block': ''}
+2026-07-17 16:14:51 | INFO     | __main__:_process_single_image:175 - Attendance : Present [Non-empty Unknown]
+2026-07-17 16:14:51 | INFO     | __main__:_process_single_image:176 - --------------------
+2026-07-17 16:14:51 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (3 < 8)
+2026-07-17 16:14:51 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:14:51 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:15:20 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:15:20 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:15:20 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:15:21 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:15:21 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:15:21 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:15:21 | DEBUG    | src.preprocessing.enhancer:deskew:40 - Deskewing image by -90.00 degrees
+2026-07-17 16:15:21 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:15:21 | DEBUG    | src.table.detector:detect:38 - Found table at x=151, y=0, w=912, h=912
+2026-07-17 16:15:21 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:15:21 | INFO     | src.row.extractor:extract:79 - Extracted 1 rows from table
+2026-07-17 16:15:21 | INFO     | __main__:_process_single_image:112 - Processing 1 rows for image.png page 1
+2026-07-17 16:15:21 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (3 < 8)
+2026-07-17 16:15:21 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:15:21 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:21:34 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:21:34 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:21:34 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:21:35 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:21:35 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:21:35 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:21:35 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:21:35 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:21:35 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:21:35 | INFO     | src.row.extractor:extract:58 - Extracted 32 rows from table
+2026-07-17 16:21:35 | INFO     | __main__:_process_single_image:112 - Processing 32 rows for image.png page 1
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 20, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 21, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 22, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 23, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 24, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 25, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 26, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 27, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 28, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 29, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 30, not enough cells (1 < 8)
+2026-07-17 16:21:36 | DEBUG    | __main__:_process_single_image:121 - Skipping row 31, not enough cells (1 < 8)
+2026-07-17 16:21:36 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:21:36 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:22:04 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:22:04 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:22:04 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:22:05 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:22:05 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:22:05 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:22:05 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:22:05 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:22:05 | INFO     | src.row.extractor:extract:58 - Extracted 32 rows from table
+2026-07-17 16:22:05 | INFO     | __main__:_process_single_image:112 - Processing 32 rows for image.png page 1
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 16:22:05 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 20, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 21, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 22, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 23, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 24, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 25, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 26, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 27, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 28, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 29, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 30, not enough cells (1 < 8)
+2026-07-17 16:22:06 | DEBUG    | __main__:_process_single_image:121 - Skipping row 31, not enough cells (1 < 8)
+2026-07-17 16:22:06 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:22:06 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:22:28 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:22:28 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:22:28 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:22:29 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:22:29 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:22:29 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:22:29 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:22:29 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:22:29 | INFO     | src.row.extractor:extract:58 - Extracted 32 rows from table
+2026-07-17 16:22:29 | INFO     | __main__:_process_single_image:112 - Processing 32 rows for image.png page 1
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 2 vertical lines found at: [2, 617, 1153]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 31 vertical lines found at: [2, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 59 vertical lines found at: [2, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 83 vertical lines found at: [6, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 105 vertical lines found at: [6, 614]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 127 vertical lines found at: [6, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 150 vertical lines found at: [6, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 169 vertical lines found at: [7, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 195 vertical lines found at: [7, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 217 vertical lines found at: [7, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 240 vertical lines found at: [6, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 262 vertical lines found at: [4, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 285 vertical lines found at: [4, 614]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 308 vertical lines found at: [2, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 331 vertical lines found at: [2, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 353 vertical lines found at: [2, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 376 vertical lines found at: [2, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 410 vertical lines found at: [5, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 444 vertical lines found at: [5, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 466 vertical lines found at: [5, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 487 vertical lines found at: [6, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 20, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 511 vertical lines found at: [6, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 21, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 545 vertical lines found at: [6, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 22, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 578 vertical lines found at: [6, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 23, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 601 vertical lines found at: [6, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 24, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 624 vertical lines found at: [6, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 25, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 646 vertical lines found at: [6, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 26, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 669 vertical lines found at: [5, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 27, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 692 vertical lines found at: [5, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 28, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 714 vertical lines found at: [5, 615]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 29, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 737 vertical lines found at: [5, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 30, not enough cells (1 < 8)
+2026-07-17 16:22:29 | DEBUG    | src.cell.extractor:extract:47 - Row 760 vertical lines found at: [2, 616]
+2026-07-17 16:22:29 | DEBUG    | __main__:_process_single_image:121 - Skipping row 31, not enough cells (1 < 8)
+2026-07-17 16:22:29 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:22:29 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:23:43 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:23:43 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:23:43 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:23:45 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:23:45 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:23:45 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:23:45 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:23:45 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:23:45 | INFO     | src.row.extractor:extract:58 - Extracted 32 rows from table
+2026-07-17 16:23:45 | INFO     | __main__:_process_single_image:112 - Processing 32 rows for image.png page 1
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 2 vertical lines found at: [2, 621, 1153]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (2 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 31 vertical lines found at: [2, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 59 vertical lines found at: [2, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 83 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 105 vertical lines found at: [7, 614]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 127 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 150 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 169 vertical lines found at: [8, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 195 vertical lines found at: [8, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 217 vertical lines found at: [8, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 240 vertical lines found at: [7, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 262 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 285 vertical lines found at: [6, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 308 vertical lines found at: [5, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 331 vertical lines found at: [3, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 353 vertical lines found at: [3, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 376 vertical lines found at: [3, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 410 vertical lines found at: [6, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 444 vertical lines found at: [6, 617]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 466 vertical lines found at: [6, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 487 vertical lines found at: [6, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 20, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 511 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 21, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 545 vertical lines found at: [7, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 22, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 578 vertical lines found at: [7, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 23, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 601 vertical lines found at: [6, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 24, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 624 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 25, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 646 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 26, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 669 vertical lines found at: [7, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 27, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 692 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 28, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 714 vertical lines found at: [7, 615]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 29, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 737 vertical lines found at: [7, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 30, not enough cells (1 < 8)
+2026-07-17 16:23:45 | DEBUG    | src.cell.extractor:extract:47 - Row 760 vertical lines found at: [3, 616]
+2026-07-17 16:23:45 | DEBUG    | __main__:_process_single_image:121 - Skipping row 31, not enough cells (1 < 8)
+2026-07-17 16:23:45 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:23:45 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:24:16 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:24:16 | INFO     | __main__:__init__:30 - Initializing AI Attendance Recognition System...
+2026-07-17 16:24:16 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:24:17 | INFO     | __main__:process_all:55 - Starting batch processing...
+2026-07-17 16:24:17 | INFO     | __main__:process_image:82 - Processing Image: image.png
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:92 - Running pipeline for image.png (Page 1)
+2026-07-17 16:24:17 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:24:17 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:24:17 | DEBUG    | src.row.extractor:extract:17 - Extracting rows from table
+2026-07-17 16:24:17 | INFO     | src.row.extractor:extract:58 - Extracted 32 rows from table
+2026-07-17 16:24:17 | INFO     | __main__:_process_single_image:112 - Processing 32 rows for image.png page 1
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 0, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 1, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 2, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 3, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 4, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 5, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 6, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 7, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 8, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 9, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 10, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 11, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 12, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 13, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 14, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 15, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 16, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 17, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 18, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 19, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 20, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 21, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 22, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 23, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 24, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 25, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 26, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 27, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 28, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 29, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 30, not enough cells (1 < 8)
+2026-07-17 16:24:17 | DEBUG    | __main__:_process_single_image:121 - Skipping row 31, not enough cells (1 < 8)
+2026-07-17 16:24:17 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:24:17 | INFO     | __main__:process_all:70 - Batch processing completed.
+2026-07-17 16:36:57 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:36:57 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 16:36:57 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:36:58 | INFO     | __main__:process_all:52 - Starting batch processing...
+2026-07-17 16:36:58 | INFO     | __main__:process_image:79 - Processing Image: image.png
+2026-07-17 16:36:58 | DEBUG    | __main__:_process_single_image:89 - Running pipeline for image.png (Page 1)
+2026-07-17 16:36:58 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:36:58 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:36:58 | INFO     | __main__:_process_single_image:102 - Running full-table OCR for image.png page 1...
+2026-07-17 16:37:06 | INFO     | __main__:_process_single_image:134 - Extracted 34 potential rows
+2026-07-17 16:37:06 | INFO     | __main__:_process_single_image:142 - Found 30 data rows.
+2026-07-17 16:37:06 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:37:37 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '1', 'S_G_No': '1', 'Groups': 'G1', 'UID': '23BAI70077', 'Name': 'Taranjot Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:37:37 | INFO     | __main__:_process_single_image:186 - --- ROW 1 ---
+2026-07-17 16:37:37 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['1', '1', 'G1', '23BAI70077', 'Taranjot Singh', '301', 'D3', 'TaranjotSinge']
+2026-07-17 16:37:37 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '1', 'S_G_No': '1', 'Groups': 'G1', 'UID': '23BAI70077', 'Name': 'Taranjot Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:37:37 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:37:37 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:37:37 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:37:55 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '2', 'S_G_No': '2', 'Groups': 'G1', 'UID': '23BAI70417', 'Name': 'Ramireddy Srihitha Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:37:55 | INFO     | __main__:_process_single_image:186 - --- ROW 2 ---
+2026-07-17 16:37:55 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['2', '2', 'G1', '23BAI70417', 'Ramireddy Srihitha Reddy', '301', 'D3']
+2026-07-17 16:37:55 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '2', 'S_G_No': '2', 'Groups': 'G1', 'UID': '23BAI70417', 'Name': 'Ramireddy Srihitha Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:37:55 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:37:55 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:37:55 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:38:12 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '3', 'S_G_No': '3', 'Groups': 'G1', 'UID': '23BAI70214', 'Name': 'Kasam Vivek Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:38:12 | INFO     | __main__:_process_single_image:186 - --- ROW 3 ---
+2026-07-17 16:38:12 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['3', '3', 'G1', '23BAI70214', 'Kasam Vivek Reddy', '301', 'D3']
+2026-07-17 16:38:12 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '3', 'S_G_No': '3', 'Groups': 'G1', 'UID': '23BAI70214', 'Name': 'Kasam Vivek Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:38:12 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:38:12 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:38:12 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:38:29 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '4', 'S_G_No': '4', 'Groups': 'G1', 'UID': '23BAI70597', 'Name': 'Shaik Baba Saleem', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:38:29 | INFO     | __main__:_process_single_image:186 - --- ROW 4 ---
+2026-07-17 16:38:29 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['4', '4', 'G1', '23BAI70597', 'Shaik Baba Saleem', '301', 'D3']
+2026-07-17 16:38:29 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '4', 'S_G_No': '4', 'Groups': 'G1', 'UID': '23BAI70597', 'Name': 'Shaik Baba Saleem', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:38:29 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:38:29 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:38:29 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:38:45 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '5', 'S_G_No': '5', 'Groups': 'G1', 'UID': '23BIS70018', 'Name': 'Palisetty Sanjay Kumar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:38:45 | INFO     | __main__:_process_single_image:186 - --- ROW 5 ---
+2026-07-17 16:38:45 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['5', '5', 'G1', '23BIS70018', 'Palisetty Sanjay Kumar', '301', 'D3']
+2026-07-17 16:38:45 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '5', 'S_G_No': '5', 'Groups': 'G1', 'UID': '23BIS70018', 'Name': 'Palisetty Sanjay Kumar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:38:45 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:38:45 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:38:45 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:39:02 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BAI70358', 'Name': 'Kolloju Vikranth Keshav', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:02 | INFO     | __main__:_process_single_image:186 - --- ROW 6 ---
+2026-07-17 16:39:02 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['6', '6', 'G1', '23BAI70358', 'Kolloju Vikranth Keshav', '301', 'D3', 'P']
+2026-07-17 16:39:02 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BAI70358', 'Name': 'Kolloju Vikranth Keshav', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:02 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:39:02 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:39:02 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:39:21 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '7', 'S_G_No': '7', 'Groups': 'G1', 'UID': '23BAI70500', 'Name': 'Alisha', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:21 | INFO     | __main__:_process_single_image:186 - --- ROW 7 ---
+2026-07-17 16:39:21 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['7', '7', 'G1', '23BAI70500', 'Alisha', '301', 'D3', 'Alishg']
+2026-07-17 16:39:21 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '7', 'S_G_No': '7', 'Groups': 'G1', 'UID': '23BAI70500', 'Name': 'Alisha', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:21 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:39:21 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:39:21 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:39:40 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '8', 'S_G_No': '8', 'Groups': 'G1', 'UID': '23BAI70617', 'Name': 'PVaishnavi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:40 | INFO     | __main__:_process_single_image:186 - --- ROW 8 ---
+2026-07-17 16:39:40 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['8', '8', 'G1', '23BAI70617', 'PVaishnavi', '301', 'D3']
+2026-07-17 16:39:40 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '8', 'S_G_No': '8', 'Groups': 'G1', 'UID': '23BAI70617', 'Name': 'PVaishnavi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:40 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:39:40 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:39:40 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:39:56 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BDA70038', 'Name': 'Prince Goyal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:56 | INFO     | __main__:_process_single_image:186 - --- ROW 9 ---
+2026-07-17 16:39:56 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['6', '6', 'G1', '23BDA70038', 'Prince Goyal', '301', 'D3']
+2026-07-17 16:39:56 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BDA70038', 'Name': 'Prince Goyal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:39:56 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:39:56 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:39:56 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:40:12 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '10', 'S_G_No': '10', 'Groups': 'G1', 'UID': '23BAI70213', 'Name': 'Ramandeep Kaur', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:40:12 | INFO     | __main__:_process_single_image:186 - --- ROW 10 ---
+2026-07-17 16:40:12 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['10', '10', 'G1', '23BAI70213', 'Ramandeep Kaur', '301', 'D3']
+2026-07-17 16:40:12 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '10', 'S_G_No': '10', 'Groups': 'G1', 'UID': '23BAI70213', 'Name': 'Ramandeep Kaur', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:40:12 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:40:12 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:40:12 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:40:29 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '11', 'S_G_No': '11', 'Groups': 'G1', 'UID': '23BAI70459', 'Name': 'Parth', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:40:29 | INFO     | __main__:_process_single_image:186 - --- ROW 11 ---
+2026-07-17 16:40:29 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['11', '11', 'G1', '23BAI70459', 'Parth', '301', 'D3', 'Paarth']
+2026-07-17 16:40:29 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '11', 'S_G_No': '11', 'Groups': 'G1', 'UID': '23BAI70459', 'Name': 'Parth', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:40:29 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:40:29 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:40:29 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:40:49 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '12', 'S_G_No': '12', 'Groups': 'G1', 'UID': '23BAI70578', 'Name': 'Dasari Veera Venkata Nooka Surya Saran', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:40:49 | INFO     | __main__:_process_single_image:186 - --- ROW 12 ---
+2026-07-17 16:40:49 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['12', '12', 'G1', '23BAI70578', 'Dasari Veera Venkata Nooka Surya Saran', '301', 'D3']
+2026-07-17 16:40:49 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '12', 'S_G_No': '12', 'Groups': 'G1', 'UID': '23BAI70578', 'Name': 'Dasari Veera Venkata Nooka Surya Saran', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:40:49 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:40:49 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:40:49 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:41:05 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '13', 'S_G_No': '13', 'Groups': 'G1', 'UID': '23BAI70691', 'Name': 'Vansh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:05 | INFO     | __main__:_process_single_image:186 - --- ROW 13 ---
+2026-07-17 16:41:05 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['13', '13', 'G1', '23BAI70691', 'Vansh', '301', 'D3', 'Vand']
+2026-07-17 16:41:05 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '13', 'S_G_No': '13', 'Groups': 'G1', 'UID': '23BAI70691', 'Name': 'Vansh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:05 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:41:05 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:41:05 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:41:24 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '14', 'S_G_No': '14', 'Groups': 'G1', 'UID': '23BAI70260', 'Name': 'Yeddula Pavan Tejeswar Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:24 | INFO     | __main__:_process_single_image:186 - --- ROW 14 ---
+2026-07-17 16:41:24 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['14', '14', 'G1', '23BAI70260', 'Yeddula Pavan Tejeswar Reddy', '301', 'D3']
+2026-07-17 16:41:24 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '14', 'S_G_No': '14', 'Groups': 'G1', 'UID': '23BAI70260', 'Name': 'Yeddula Pavan Tejeswar Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:24 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:41:24 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:41:24 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:41:42 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '15', 'S_G_No': '15', 'Groups': 'G1', 'UID': '23BAI70232', 'Name': 'Kandukuri Jnaneswar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:42 | INFO     | __main__:_process_single_image:186 - --- ROW 15 ---
+2026-07-17 16:41:42 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['15', '15', 'G1', '23BAI70232', 'Kandukuri Jnaneswar', '301', 'D3']
+2026-07-17 16:41:42 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '15', 'S_G_No': '15', 'Groups': 'G1', 'UID': '23BAI70232', 'Name': 'Kandukuri Jnaneswar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:42 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:41:42 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:41:42 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:41:59 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '16', 'S_G_No': '16', 'Groups': 'G1', 'UID': '23BIS70067', 'Name': 'Muzakir Masood Lone', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:59 | INFO     | __main__:_process_single_image:186 - --- ROW 16 ---
+2026-07-17 16:41:59 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['16', '16', 'G1', '23BIS70067', 'Muzakir Masood Lone', '301', 'D3']
+2026-07-17 16:41:59 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '16', 'S_G_No': '16', 'Groups': 'G1', 'UID': '23BIS70067', 'Name': 'Muzakir Masood Lone', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:41:59 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:41:59 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:41:59 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:42:16 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '17', 'S_G_No': '17', 'Groups': 'G1', 'UID': '23BAI70237', 'Name': 'Vanum Venkata Charan', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:42:16 | INFO     | __main__:_process_single_image:186 - --- ROW 17 ---
+2026-07-17 16:42:16 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['17', '17', 'G1', '23BAI70237', 'Vanum Venkata Charan', '301', 'D3', 'Q']
+2026-07-17 16:42:16 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '17', 'S_G_No': '17', 'Groups': 'G1', 'UID': '23BAI70237', 'Name': 'Vanum Venkata Charan', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:42:16 | INFO     | __main__:_process_single_image:189 - Attendance : Present [Fallback (Handwriting/Name)]
+2026-07-17 16:42:16 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:42:16 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:42:34 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '18', 'S_G_No': '18', 'Groups': 'G1', 'UID': '23BAI70099', 'Name': 'Jagdeep Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:42:34 | INFO     | __main__:_process_single_image:186 - --- ROW 18 ---
+2026-07-17 16:42:34 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['18', '18', 'G1', '23BAI70099', 'Jagdeep Singh', '301', 'D3', 'ayceepSiny']
+2026-07-17 16:42:34 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '18', 'S_G_No': '18', 'Groups': 'G1', 'UID': '23BAI70099', 'Name': 'Jagdeep Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:42:34 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:42:34 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:42:34 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:42:55 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '19', 'S_G_No': '19', 'Groups': 'G1', 'UID': '23BAI70275', 'Name': 'Garikapati Abhiram', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:42:55 | INFO     | __main__:_process_single_image:186 - --- ROW 19 ---
+2026-07-17 16:42:55 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['19', '19', 'G1', '23BAI70275', 'Garikapati Abhiram', '301', 'D3']
+2026-07-17 16:42:55 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '19', 'S_G_No': '19', 'Groups': 'G1', 'UID': '23BAI70275', 'Name': 'Garikapati Abhiram', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:42:55 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:42:55 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:42:55 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:43:13 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '20', 'S_G_No': '20', 'Groups': 'G1', 'UID': '23BAI70650', 'Name': 'Damarla Jaswanth Naga Sai Venkat', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:43:13 | INFO     | __main__:_process_single_image:186 - --- ROW 20 ---
+2026-07-17 16:43:13 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['20', '20', 'G1', '23BAI70650', 'Damarla Jaswanth Naga Sai Venkat', '301', 'D3']
+2026-07-17 16:43:13 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '20', 'S_G_No': '20', 'Groups': 'G1', 'UID': '23BAI70650', 'Name': 'Damarla Jaswanth Naga Sai Venkat', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:43:13 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:43:13 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:43:13 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:43:28 | INFO     | src.utils.logger:setup_logger:26 - Logger initialized successfully.
+2026-07-17 16:43:28 | INFO     | __main__:__init__:29 - Initializing AI Attendance Recognition System...
+2026-07-17 16:43:28 | INFO     | src.ocr.engine:__init__:15 - Initializing PaddleOCR (lang=en, use_gpu=False)
+2026-07-17 16:43:32 | INFO     | __main__:process_all:52 - Starting batch processing...
+2026-07-17 16:43:32 | INFO     | __main__:process_image:79 - Processing Image: image.png
+2026-07-17 16:43:32 | DEBUG    | __main__:_process_single_image:89 - Running pipeline for image.png (Page 1)
+2026-07-17 16:43:32 | DEBUG    | src.table.detector:detect:15 - Starting table detection using global ink projection
+2026-07-17 16:43:32 | DEBUG    | src.table.detector:detect:38 - Found table at x=0, y=0, w=1205, h=912
+2026-07-17 16:43:32 | INFO     | __main__:_process_single_image:102 - Running full-table OCR for image.png page 1...
+2026-07-17 16:43:32 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '21', 'S_G_No': '21', 'Groups': 'G1', 'UID': '23BDA70029', 'Name': 'Vineet Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:43:32 | INFO     | __main__:_process_single_image:186 - --- ROW 21 ---
+2026-07-17 16:43:32 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['21', '21', 'G1', '23BDA70029', 'Vineet Vashisht', '301', 'D3']
+2026-07-17 16:43:32 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '21', 'S_G_No': '21', 'Groups': 'G1', 'UID': '23BDA70029', 'Name': 'Vineet Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:43:32 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:43:32 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:43:32 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:43:46 | INFO     | __main__:_process_single_image:134 - Extracted 34 potential rows
+2026-07-17 16:43:46 | INFO     | __main__:_process_single_image:142 - Found 30 data rows.
+2026-07-17 16:43:46 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:43:55 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '22', 'S_G_No': '22', 'Groups': 'G1', 'UID': '23BAI70295', 'Name': 'Shivani Choudhary', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:43:55 | INFO     | __main__:_process_single_image:186 - --- ROW 22 ---
+2026-07-17 16:43:55 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['22', '22', 'G1', '23BAI70295', 'Shivani Choudhary', '301', 'D3']
+2026-07-17 16:43:55 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '22', 'S_G_No': '22', 'Groups': 'G1', 'UID': '23BAI70295', 'Name': 'Shivani Choudhary', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:43:55 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:43:55 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:43:55 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:44:06 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '1', 'S_G_No': '1', 'Groups': 'G1', 'UID': '23BAI70077', 'Name': 'Taranjot Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:06 | INFO     | __main__:_process_single_image:186 - --- ROW 1 ---
+2026-07-17 16:44:06 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['1', '1', 'G1', '23BAI70077', 'Taranjot Singh', '301', 'D3', 'TaranjotSinge']
+2026-07-17 16:44:06 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '1', 'S_G_No': '1', 'Groups': 'G1', 'UID': '23BAI70077', 'Name': 'Taranjot Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:06 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:44:06 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:44:06 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:44:21 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '23', 'S_G_No': '23', 'Groups': 'G1', 'UID': '23BDA70041', 'Name': 'Vini Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:21 | INFO     | __main__:_process_single_image:186 - --- ROW 23 ---
+2026-07-17 16:44:21 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['23', '23', 'G1', '23BDA70041', 'Vini Vashisht', '301', 'D3', '3m']
+2026-07-17 16:44:21 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '23', 'S_G_No': '23', 'Groups': 'G1', 'UID': '23BDA70041', 'Name': 'Vini Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:21 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:44:21 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:44:21 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:44:36 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '2', 'S_G_No': '2', 'Groups': 'G1', 'UID': '23BAI70417', 'Name': 'Ramireddy Srihitha Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:36 | INFO     | __main__:_process_single_image:186 - --- ROW 2 ---
+2026-07-17 16:44:36 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['2', '2', 'G1', '23BAI70417', 'Ramireddy Srihitha Reddy', '301', 'D3']
+2026-07-17 16:44:36 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '2', 'S_G_No': '2', 'Groups': 'G1', 'UID': '23BAI70417', 'Name': 'Ramireddy Srihitha Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:36 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:44:36 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:44:36 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:44:51 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '24', 'S_G_No': '24', 'Groups': 'G1', 'UID': '23BAI70175', 'Name': 'Priyanshi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:51 | INFO     | __main__:_process_single_image:186 - --- ROW 24 ---
+2026-07-17 16:44:51 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['24', '24', 'G1', '23BAI70175', 'Priyanshi', '301', 'D3']
+2026-07-17 16:44:51 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '24', 'S_G_No': '24', 'Groups': 'G1', 'UID': '23BAI70175', 'Name': 'Priyanshi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:44:51 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:44:51 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:44:51 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:45:03 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '3', 'S_G_No': '3', 'Groups': 'G1', 'UID': '23BAI70214', 'Name': 'Kasam Vivek Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:03 | INFO     | __main__:_process_single_image:186 - --- ROW 3 ---
+2026-07-17 16:45:03 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['3', '3', 'G1', '23BAI70214', 'Kasam Vivek Reddy', '301', 'D3']
+2026-07-17 16:45:03 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '3', 'S_G_No': '3', 'Groups': 'G1', 'UID': '23BAI70214', 'Name': 'Kasam Vivek Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:03 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:45:03 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:45:03 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:45:17 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '25', 'S_G_No': '25', 'Groups': 'G1', 'UID': '23BAI70416', 'Name': 'Manvi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:17 | INFO     | __main__:_process_single_image:186 - --- ROW 25 ---
+2026-07-17 16:45:17 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['25', '25', 'G1', '23BAI70416', 'Manvi', '301', 'D3', 'Manui']
+2026-07-17 16:45:17 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '25', 'S_G_No': '25', 'Groups': 'G1', 'UID': '23BAI70416', 'Name': 'Manvi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:17 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:45:17 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:45:17 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:45:28 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '4', 'S_G_No': '4', 'Groups': 'G1', 'UID': '23BAI70597', 'Name': 'Shaik Baba Saleem', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:28 | INFO     | __main__:_process_single_image:186 - --- ROW 4 ---
+2026-07-17 16:45:28 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['4', '4', 'G1', '23BAI70597', 'Shaik Baba Saleem', '301', 'D3']
+2026-07-17 16:45:28 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '4', 'S_G_No': '4', 'Groups': 'G1', 'UID': '23BAI70597', 'Name': 'Shaik Baba Saleem', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:28 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:45:28 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:45:28 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:45:43 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '26', 'S_G_No': '26', 'Groups': 'G1', 'UID': '23BAI70271', 'Name': 'Tanmoy Talukdar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:43 | INFO     | __main__:_process_single_image:186 - --- ROW 26 ---
+2026-07-17 16:45:43 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['26', '26', 'G1', '23BAI70271', 'Tanmoy Talukdar', '301', 'D3', 'Haunoy']
+2026-07-17 16:45:43 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '26', 'S_G_No': '26', 'Groups': 'G1', 'UID': '23BAI70271', 'Name': 'Tanmoy Talukdar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:43 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:45:43 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:45:43 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:45:54 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '5', 'S_G_No': '5', 'Groups': 'G1', 'UID': '23BIS70018', 'Name': 'Palisetty Sanjay Kumar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:54 | INFO     | __main__:_process_single_image:186 - --- ROW 5 ---
+2026-07-17 16:45:54 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['5', '5', 'G1', '23BIS70018', 'Palisetty Sanjay Kumar', '301', 'D3']
+2026-07-17 16:45:54 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '5', 'S_G_No': '5', 'Groups': 'G1', 'UID': '23BIS70018', 'Name': 'Palisetty Sanjay Kumar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:45:54 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:45:54 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:45:54 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:46:11 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '27', 'S_G_No': '27', 'Groups': 'G1', 'UID': '23BAI70274', 'Name': 'Sai Shashank Singu', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:46:11 | INFO     | __main__:_process_single_image:186 - --- ROW 27 ---
+2026-07-17 16:46:11 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['27', '27', 'G1', '23BAI70274', 'Sai Shashank Singu', '301', 'D3']
+2026-07-17 16:46:11 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '27', 'S_G_No': '27', 'Groups': 'G1', 'UID': '23BAI70274', 'Name': 'Sai Shashank Singu', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:46:11 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:46:11 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:46:11 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:46:26 | ERROR    | src.ocr.llm_formatter:format_row:59 - LLM formatting failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30). Falling back to raw text.
+2026-07-17 16:46:26 | INFO     | __main__:_process_single_image:186 - --- ROW 6 ---
+2026-07-17 16:46:26 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['6', '6', 'G1', '23BAI70358', 'Kolloju Vikranth Keshav', '301', 'D3', 'P']
+2026-07-17 16:46:26 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BAI70358', 'Name': 'Kolloju Vikranth Keshav', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:46:26 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:46:26 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:46:26 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:46:43 | ERROR    | src.ocr.llm_formatter:format_row:59 - LLM formatting failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30). Falling back to raw text.
+2026-07-17 16:46:43 | INFO     | __main__:_process_single_image:186 - --- ROW 28 ---
+2026-07-17 16:46:43 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['28', '28', 'G1', '23BAI70429', 'Vakalapudi T S Naga Venkata Surya Teja', '301', 'E3']
+2026-07-17 16:46:43 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '28', 'S_G_No': '28', 'Groups': 'G1', 'UID': '23BAI70429', 'Name': 'Vakalapudi T S Naga Venkata Surya Teja', 'Room_No': '301', 'Block': 'E3'}
+2026-07-17 16:46:43 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:46:43 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:46:43 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:46:54 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '7', 'S_G_No': '7', 'Groups': 'G1', 'UID': '23BAI70500', 'Name': 'Alisha', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:46:54 | INFO     | __main__:_process_single_image:186 - --- ROW 7 ---
+2026-07-17 16:46:54 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['7', '7', 'G1', '23BAI70500', 'Alisha', '301', 'D3', 'Alishg']
+2026-07-17 16:46:54 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '7', 'S_G_No': '7', 'Groups': 'G1', 'UID': '23BAI70500', 'Name': 'Alisha', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:46:54 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:46:54 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:46:54 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:47:09 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '29', 'S_G_No': '29', 'Groups': 'G1', 'UID': '23BDA70059', 'Name': 'Royal Singh Rana', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:09 | INFO     | __main__:_process_single_image:186 - --- ROW 29 ---
+2026-07-17 16:47:09 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['29', '29', 'G1', '23BDA70059', 'Royal Singh Rana', '301', 'D3']
+2026-07-17 16:47:09 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '29', 'S_G_No': '29', 'Groups': 'G1', 'UID': '23BDA70059', 'Name': 'Royal Singh Rana', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:09 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:47:09 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:47:09 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:47:20 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '8', 'S_G_No': '8', 'Groups': 'G1', 'UID': '23BAI70617', 'Name': 'Pavishnavi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:20 | INFO     | __main__:_process_single_image:186 - --- ROW 8 ---
+2026-07-17 16:47:20 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['8', '8', 'G1', '23BAI70617', 'PVaishnavi', '301', 'D3']
+2026-07-17 16:47:20 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '8', 'S_G_No': '8', 'Groups': 'G1', 'UID': '23BAI70617', 'Name': 'Pavishnavi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:20 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:47:20 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:47:20 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:47:36 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '30', 'S_G_No': '30', 'Groups': 'G1', 'UID': '23BAI70090', 'Name': 'Pulastaya Bansal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:36 | INFO     | __main__:_process_single_image:186 - --- ROW 30 ---
+2026-07-17 16:47:36 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['30', '30', 'G1', '23BAI70090', 'Pulastaya Bansal', '301', 'D3']
+2026-07-17 16:47:36 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '30', 'S_G_No': '30', 'Groups': 'G1', 'UID': '23BAI70090', 'Name': 'Pulastaya Bansal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:36 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:47:36 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:47:36 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:47:36 | INFO     | __main__:process_all:67 - Batch processing completed.
+2026-07-17 16:47:51 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BDA70038', 'Name': 'Prince Goyal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:51 | INFO     | __main__:_process_single_image:186 - --- ROW 9 ---
+2026-07-17 16:47:51 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['6', '6', 'G1', '23BDA70038', 'Prince Goyal', '301', 'D3']
+2026-07-17 16:47:51 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '6', 'S_G_No': '6', 'Groups': 'G1', 'UID': '23BDA70038', 'Name': 'Prince Goyal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:47:51 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:47:51 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:47:51 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:48:05 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '10', 'S_G_No': '10', 'Groups': 'G1', 'UID': '23BAI70213', 'Name': 'Ramandeep Kaur', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:05 | INFO     | __main__:_process_single_image:186 - --- ROW 10 ---
+2026-07-17 16:48:05 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['10', '10', 'G1', '23BAI70213', 'Ramandeep Kaur', '301', 'D3']
+2026-07-17 16:48:05 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '10', 'S_G_No': '10', 'Groups': 'G1', 'UID': '23BAI70213', 'Name': 'Ramandeep Kaur', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:05 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:48:05 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:48:05 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:48:20 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '11', 'S_G_No': '11', 'Groups': 'G1', 'UID': '23BAI70459', 'Name': 'Parth', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:20 | INFO     | __main__:_process_single_image:186 - --- ROW 11 ---
+2026-07-17 16:48:20 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['11', '11', 'G1', '23BAI70459', 'Parth', '301', 'D3', 'Paarth']
+2026-07-17 16:48:20 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '11', 'S_G_No': '11', 'Groups': 'G1', 'UID': '23BAI70459', 'Name': 'Parth', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:20 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:48:20 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:48:20 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:48:35 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '12', 'S_G_No': '12', 'Groups': 'G1', 'UID': '23BAI70578', 'Name': 'Dasari Veera Venkata Nooka Surya Saran', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:35 | INFO     | __main__:_process_single_image:186 - --- ROW 12 ---
+2026-07-17 16:48:35 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['12', '12', 'G1', '23BAI70578', 'Dasari Veera Venkata Nooka Surya Saran', '301', 'D3']
+2026-07-17 16:48:35 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '12', 'S_G_No': '12', 'Groups': 'G1', 'UID': '23BAI70578', 'Name': 'Dasari Veera Venkata Nooka Surya Saran', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:35 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:48:35 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:48:35 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:48:48 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '13', 'S_G_No': '13', 'Groups': 'G1', 'UID': '23BAI70691', 'Name': 'Vansh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:48 | INFO     | __main__:_process_single_image:186 - --- ROW 13 ---
+2026-07-17 16:48:48 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['13', '13', 'G1', '23BAI70691', 'Vansh', '301', 'D3', 'Vand']
+2026-07-17 16:48:48 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '13', 'S_G_No': '13', 'Groups': 'G1', 'UID': '23BAI70691', 'Name': 'Vansh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:48:48 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:48:48 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:48:48 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:49:03 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '14', 'S_G_No': '14', 'Groups': 'G1', 'UID': '23BAI70260', 'Name': 'Yeddula Pavan Tejeswar Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:03 | INFO     | __main__:_process_single_image:186 - --- ROW 14 ---
+2026-07-17 16:49:03 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['14', '14', 'G1', '23BAI70260', 'Yeddula Pavan Tejeswar Reddy', '301', 'D3']
+2026-07-17 16:49:03 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '14', 'S_G_No': '14', 'Groups': 'G1', 'UID': '23BAI70260', 'Name': 'Yeddula Pavan Tejeswar Reddy', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:03 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:49:03 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:49:03 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:49:17 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '15', 'S_G_No': '15', 'Groups': 'G1', 'UID': '23BAI70232', 'Name': 'Kandukuri Jnaneswar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:17 | INFO     | __main__:_process_single_image:186 - --- ROW 15 ---
+2026-07-17 16:49:17 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['15', '15', 'G1', '23BAI70232', 'Kandukuri Jnaneswar', '301', 'D3']
+2026-07-17 16:49:17 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '15', 'S_G_No': '15', 'Groups': 'G1', 'UID': '23BAI70232', 'Name': 'Kandukuri Jnaneswar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:17 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:49:17 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:49:17 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:49:32 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '16', 'S_G_No': '16', 'Groups': 'G1', 'UID': '23BIS70067', 'Name': 'Muzakir Masood Lone', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:32 | INFO     | __main__:_process_single_image:186 - --- ROW 16 ---
+2026-07-17 16:49:32 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['16', '16', 'G1', '23BIS70067', 'Muzakir Masood Lone', '301', 'D3']
+2026-07-17 16:49:32 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '16', 'S_G_No': '16', 'Groups': 'G1', 'UID': '23BIS70067', 'Name': 'Muzakir Masood Lone', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:32 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:49:32 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:49:32 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:49:46 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '17', 'S_G_No': '17', 'Groups': 'G1', 'UID': '23BAI70237', 'Name': 'Vanum Venkata Charan', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:46 | INFO     | __main__:_process_single_image:186 - --- ROW 17 ---
+2026-07-17 16:49:46 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['17', '17', 'G1', '23BAI70237', 'Vanum Venkata Charan', '301', 'D3', 'Q']
+2026-07-17 16:49:46 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '17', 'S_G_No': '17', 'Groups': 'G1', 'UID': '23BAI70237', 'Name': 'Vanum Venkata Charan', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:49:46 | INFO     | __main__:_process_single_image:189 - Attendance : Present [Fallback (Handwriting/Name)]
+2026-07-17 16:49:46 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:49:46 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:50:00 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '18', 'S_G_No': '18', 'Groups': 'G1', 'UID': '23BAI70099', 'Name': 'Jagdeep Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:00 | INFO     | __main__:_process_single_image:186 - --- ROW 18 ---
+2026-07-17 16:50:00 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['18', '18', 'G1', '23BAI70099', 'Jagdeep Singh', '301', 'D3', 'ayceepSiny']
+2026-07-17 16:50:00 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '18', 'S_G_No': '18', 'Groups': 'G1', 'UID': '23BAI70099', 'Name': 'Jagdeep Singh', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:00 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:50:00 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:50:00 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:50:14 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '19', 'S_G_No': '19', 'Groups': 'G1', 'UID': '23BAI70275', 'Name': 'Garikapati Abhiram', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:14 | INFO     | __main__:_process_single_image:186 - --- ROW 19 ---
+2026-07-17 16:50:14 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['19', '19', 'G1', '23BAI70275', 'Garikapati Abhiram', '301', 'D3']
+2026-07-17 16:50:14 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '19', 'S_G_No': '19', 'Groups': 'G1', 'UID': '23BAI70275', 'Name': 'Garikapati Abhiram', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:14 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:50:14 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:50:14 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:50:29 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '20', 'S_G_No': '20', 'Groups': 'G1', 'UID': '23BAI70650', 'Name': 'Damarla Jaswanth Naga Sai Venkat', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:29 | INFO     | __main__:_process_single_image:186 - --- ROW 20 ---
+2026-07-17 16:50:29 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['20', '20', 'G1', '23BAI70650', 'Damarla Jaswanth Naga Sai Venkat', '301', 'D3']
+2026-07-17 16:50:29 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '20', 'S_G_No': '20', 'Groups': 'G1', 'UID': '23BAI70650', 'Name': 'Damarla Jaswanth Naga Sai Venkat', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:29 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:50:29 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:50:29 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:50:43 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '21', 'S_G_No': '21', 'Groups': 'G1', 'UID': '23BDA70029', 'Name': 'Vineet Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:43 | INFO     | __main__:_process_single_image:186 - --- ROW 21 ---
+2026-07-17 16:50:43 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['21', '21', 'G1', '23BDA70029', 'Vineet Vashisht', '301', 'D3']
+2026-07-17 16:50:43 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '21', 'S_G_No': '21', 'Groups': 'G1', 'UID': '23BDA70029', 'Name': 'Vineet Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:43 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:50:43 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:50:43 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:50:57 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '22', 'S_G_No': '22', 'Groups': 'G1', 'UID': '23BAI70295', 'Name': 'Shivani Choudhary', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:57 | INFO     | __main__:_process_single_image:186 - --- ROW 22 ---
+2026-07-17 16:50:57 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['22', '22', 'G1', '23BAI70295', 'Shivani Choudhary', '301', 'D3']
+2026-07-17 16:50:57 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '22', 'S_G_No': '22', 'Groups': 'G1', 'UID': '23BAI70295', 'Name': 'Shivani Choudhary', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:50:57 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:50:57 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:50:57 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:51:14 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '23', 'S_G_No': '23', 'Groups': 'G1', 'UID': '23BDA70041', 'Name': 'Vini Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:14 | INFO     | __main__:_process_single_image:186 - --- ROW 23 ---
+2026-07-17 16:51:14 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['23', '23', 'G1', '23BDA70041', 'Vini Vashisht', '301', 'D3', '3m']
+2026-07-17 16:51:14 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '23', 'S_G_No': '23', 'Groups': 'G1', 'UID': '23BDA70041', 'Name': 'Vini Vashisht', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:14 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:51:14 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:51:14 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:51:30 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '24', 'S_G_No': '24', 'Groups': 'G1', 'UID': '23BAI70175', 'Name': 'Priyanshi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:30 | INFO     | __main__:_process_single_image:186 - --- ROW 24 ---
+2026-07-17 16:51:30 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['24', '24', 'G1', '23BAI70175', 'Priyanshi', '301', 'D3']
+2026-07-17 16:51:30 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '24', 'S_G_No': '24', 'Groups': 'G1', 'UID': '23BAI70175', 'Name': 'Priyanshi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:30 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:51:30 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:51:30 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:51:46 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '25', 'S_G_No': '25', 'Groups': 'G1', 'UID': '23BAI70416', 'Name': 'Manvi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:46 | INFO     | __main__:_process_single_image:186 - --- ROW 25 ---
+2026-07-17 16:51:46 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['25', '25', 'G1', '23BAI70416', 'Manvi', '301', 'D3', 'Manui']
+2026-07-17 16:51:46 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '25', 'S_G_No': '25', 'Groups': 'G1', 'UID': '23BAI70416', 'Name': 'Manvi', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:46 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:51:46 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:51:46 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:51:59 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '26', 'S_G_No': '26', 'Groups': 'G1', 'UID': '23BAI70271', 'Name': 'Tanmoy Talukdar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:59 | INFO     | __main__:_process_single_image:186 - --- ROW 26 ---
+2026-07-17 16:51:59 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['26', '26', 'G1', '23BAI70271', 'Tanmoy Talukdar', '301', 'D3', 'Haunoy']
+2026-07-17 16:51:59 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '26', 'S_G_No': '26', 'Groups': 'G1', 'UID': '23BAI70271', 'Name': 'Tanmoy Talukdar', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:51:59 | INFO     | __main__:_process_single_image:189 - Attendance : Review [Low Confidence]
+2026-07-17 16:51:59 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:51:59 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:52:13 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '27', 'S_G_No': '27', 'Groups': 'G1', 'UID': '23BAI70274', 'Name': 'Sai Shashank Singu', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:52:13 | INFO     | __main__:_process_single_image:186 - --- ROW 27 ---
+2026-07-17 16:52:13 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['27', '27', 'G1', '23BAI70274', 'Sai Shashank Singu', '301', 'D3']
+2026-07-17 16:52:13 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '27', 'S_G_No': '27', 'Groups': 'G1', 'UID': '23BAI70274', 'Name': 'Sai Shashank Singu', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:52:13 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:52:13 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:52:13 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:52:28 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '28', 'S_G_No': '28', 'Groups': 'G1', 'UID': '23BAI70429', 'Name': 'Vakalapudi T S Naga Venkata Surya Teja', 'Room_No': '301', 'Block': 'E3'}
+2026-07-17 16:52:28 | INFO     | __main__:_process_single_image:186 - --- ROW 28 ---
+2026-07-17 16:52:28 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['28', '28', 'G1', '23BAI70429', 'Vakalapudi T S Naga Venkata Surya Teja', '301', 'E3']
+2026-07-17 16:52:28 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '28', 'S_G_No': '28', 'Groups': 'G1', 'UID': '23BAI70429', 'Name': 'Vakalapudi T S Naga Venkata Surya Teja', 'Room_No': '301', 'Block': 'E3'}
+2026-07-17 16:52:28 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:52:28 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:52:28 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:52:41 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '29', 'S_G_No': '29', 'Groups': 'G1', 'UID': '23BDA70059', 'Name': 'Royal Singh Rana', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:52:41 | INFO     | __main__:_process_single_image:186 - --- ROW 29 ---
+2026-07-17 16:52:41 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['29', '29', 'G1', '23BDA70059', 'Royal Singh Rana', '301', 'D3']
+2026-07-17 16:52:41 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '29', 'S_G_No': '29', 'Groups': 'G1', 'UID': '23BDA70059', 'Name': 'Royal Singh Rana', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:52:41 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:52:41 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:52:41 | DEBUG    | src.ocr.llm_formatter:format_row:44 - Sending request to Ollama (qwen3:8b)...
+2026-07-17 16:52:54 | DEBUG    | src.ocr.llm_formatter:format_row:55 - Ollama returned: {'S_No': '30', 'S_G_No': '30', 'Groups': 'G1', 'UID': '23BAI70090', 'Name': 'Pulastaya Bansal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:52:54 | INFO     | __main__:_process_single_image:186 - --- ROW 30 ---
+2026-07-17 16:52:54 | INFO     | __main__:_process_single_image:187 - Raw OCR    : ['30', '30', 'G1', '23BAI70090', 'Pulastaya Bansal', '301', 'D3']
+2026-07-17 16:52:54 | INFO     | __main__:_process_single_image:188 - AI Cleaned : {'S_No': '30', 'S_G_No': '30', 'Groups': 'G1', 'UID': '23BAI70090', 'Name': 'Pulastaya Bansal', 'Room_No': '301', 'Block': 'D3'}
+2026-07-17 16:52:54 | INFO     | __main__:_process_single_image:189 - Attendance : Absent [Empty Cell]
+2026-07-17 16:52:54 | INFO     | __main__:_process_single_image:190 - --------------------
+2026-07-17 16:52:54 | INFO     | src.excel.generator:save:64 - Successfully saved Excel report to output\excel\attendance_result.xlsx
+2026-07-17 16:52:54 | INFO     | __main__:process_all:67 - Batch processing completed.

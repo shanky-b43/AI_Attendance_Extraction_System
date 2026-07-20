@@ -1,0 +1,28 @@
+paths:
+  input_pdfs: "input/pdfs"
+  input_images: "input/images"
+  output_excel: "output/excel"
+  output_logs: "output/logs"
+  output_debug: "output/debug"
+  output_crops: "output/crops"
+  models: "models"
+
+attendance_rules:
+  present_marks:
+    - "P"
+    - "p"
+    - "D"
+    - "d"
+  absent_marks:
+    - "A"
+    - "a"
+    - "AB"
+    - "ab"
+
+ocr:
+  confidence_threshold: 0.90
+  lang: "en"
+  use_gpu: false
+
+app:
+  debug_mode: true
