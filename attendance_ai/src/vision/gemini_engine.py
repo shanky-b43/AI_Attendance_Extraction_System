@@ -47,13 +47,13 @@ class GeminiVisionEngine:
         2. Do NOT output JSON objects. Each row must be an array of exactly 8 strings in this order:
            [S_No, S_G_No, Groups, UID, Name, Room_No, Block, Signature]
         3. For the "Signature" column, evaluate attendance using these STRICT rules in order of priority:
-           - PRIORITY 1: If the box explicitly contains the clear full word "Absent" or "absent" (do NOT confuse cursive signatures like "Anish" or "Ayush" with the word "Absent"), output "Absent" (even if there is a signature).
-           - PRIORITY 2: If the box explicitly contains the full word "Present" or "present", output "Present".
-           - PRIORITY 3: If the box contains the capital letter 'A' or 'AB' alone (do not confuse with small squiggles), output "Absent".
-           - PRIORITY 4: If the box is completely empty, blank, or just has a dash, output "Absent".
-           - PRIORITY 5: If the box contains the letter 'P', 'p', 'D', or 'd', output "Present".
-           - PRIORITY 6: If the box contains a handwritten signature (cursive scribble or name), output "Present".
-           - PRIORITY 7: If there is any ink/mark that is not clearly an 'A' or 'AB', default to "Present".
+           - PRIORITY 1: If the box contains a continuous cursive signature of a name (even if it starts with 'A' like "Anish", "Ayush", or "Arpeet"), it is ALWAYS "Present". NEVER classify a cursive name signature as "Absent".
+           - PRIORITY 2: If the box explicitly contains the clear full word "Absent" or "absent" (and NOT a signature), output "Absent".
+           - PRIORITY 3: If the box explicitly contains the full word "Present" or "present", output "Present".
+           - PRIORITY 4: If the box contains the isolated capital letter 'A' or 'AB' alone (with no other connected cursive strokes), output "Absent".
+           - PRIORITY 5: If the box is completely empty, blank, or just has a dash, output "Absent".
+           - PRIORITY 6: If the box contains the isolated letter 'P', 'p', 'D', or 'd', output "Present".
+           - PRIORITY 7: If there is any ink, squiggle, or mark that is not clearly an isolated 'A' or 'AB', default to "Present".
         4. If a field is empty (other than signature), leave it as an empty string "".
         """
 
