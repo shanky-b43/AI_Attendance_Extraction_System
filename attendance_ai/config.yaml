@@ -8,16 +8,19 @@ paths:
   models: "models"
 
 attendance_rules:
-  present_marks:
+  present_text:
     - "P"
     - "p"
     - "D"
     - "d"
-  absent_marks:
+  absent_text:
     - "A"
     - "a"
     - "AB"
     - "ab"
+  blank: "Absent"
+  handwritten_signature: "Present"
+  black_box: "Absent"
 
 ocr:
   confidence_threshold: 0.90
@@ -26,3 +29,4 @@ ocr:
 
 app:
   debug_mode: true
+  use_vision_api: true

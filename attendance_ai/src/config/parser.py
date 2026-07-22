@@ -17,8 +17,11 @@ class PathsConfig:
 
 @dataclass
 class AttendanceRulesConfig:
-    present_marks: List[str]
-    absent_marks: List[str]
+    present_text: List[str]
+    absent_text: List[str]
+    blank: str
+    handwritten_signature: str
+    black_box: str
 
 
 @dataclass
@@ -31,6 +34,7 @@ class OcrConfig:
 @dataclass
 class AppConfig:
     debug_mode: bool
+    use_vision_api: bool = False
 
 
 @dataclass
@@ -62,8 +66,11 @@ def load_config(config_path: str | Path) -> Config:
     )
 
     attendance_rules_config = AttendanceRulesConfig(
-        present_marks=data["attendance_rules"]["present_marks"],
-        absent_marks=data["attendance_rules"]["absent_marks"]
+        present_text=data["attendance_rules"]["present_text"],
+        absent_text=data["attendance_rules"]["absent_text"],
+        blank=data["attendance_rules"]["blank"],
+        handwritten_signature=data["attendance_rules"]["handwritten_signature"],
+        black_box=data["attendance_rules"]["black_box"]
     )
 
     ocr_config = OcrConfig(
@@ -73,7 +80,8 @@ def load_config(config_path: str | Path) -> Config:
     )
 
     app_config = AppConfig(
-        debug_mode=data["app"]["debug_mode"]
+        debug_mode=data["app"]["debug_mode"],
+        use_vision_api=data["app"].get("use_vision_api", False)
     )
 
     return Config(

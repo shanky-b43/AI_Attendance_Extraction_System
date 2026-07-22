@@ -1,68 +1,83 @@
-import requests
-import json
 import re
 from loguru import logger
 from typing import Dict, List
 
-class LLMFormatter:
+class RuleFormatter:
     """
-    Passes raw OCR text to local Ollama (qwen3:8b) for spelling correction and JSON formatting.
+    Cleans raw OCR text instantly using deterministic Regex rules,
+    completely replacing the slow LLM approach.
     """
-    def __init__(self, model: str = "qwen3:8b", endpoint: str = "http://localhost:11434/api/generate"):
-        self.model = model
-        self.endpoint = endpoint
+    def __init__(self):
+        pass
+
+    def clean_uid(self, text: str) -> str:
+        # Common OCR fixes for UIDs (e.g. 23BAI70077)
+        # Often 8 is read instead of B
+        text = text.upper().replace(" ", "")
+        
+        # If it looks roughly like a UID, apply specific fixes
+        # typical format: 23 BAI 70077 -> 2 digits, 3-4 letters, 5 digits
+        text = re.sub(r'^(\d{2})8', r'\g<1>B', text) # Fix 238AI -> 23BAI
+        
+        # Strict pattern match if possible
+        match = re.search(r'(\d{2}[A-Z]{3,4}\d{4,5})', text)
+        if match:
+            return match.group(1)
+        return text
+
+    def clean_groups(self, text: str) -> str:
+        text = text.upper()
+        # Keep only G and digits
+        cleaned = re.sub(r'[^G\d]', '', text)
+        if cleaned.startswith("G"):
+            return cleaned
+        if "G" in cleaned:
+            return cleaned[cleaned.index("G"):]
+        return text
+
+    def clean_room(self, text: str) -> str:
+        # Keep only digits
+        return re.sub(r'\D', '', text)
+        
+    def clean_sno(self, text: str) -> str:
+        return re.sub(r'\D', '', text)
+
+    def clean_block(self, text: str) -> str:
+        text = text.upper()
+        # Match something like D3, E3
+        match = re.search(r'([A-Z]\d)', text)
+        if match:
+            return match.group(1)
+        return text
+
+    def clean_name(self, text: str) -> str:
+        # Remove weird punctuation and title case
+        cleaned = re.sub(r'[^a-zA-Z\s]', '', text)
+        # Collapse multiple spaces
+        cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+        return cleaned.title()
 
     def format_row(self, raw_texts: List[str]) -> Dict[str, str]:
-        prompt = f"""
-You are a highly accurate data cleaner for a student attendance system.
-I will give you an array of 7 messy OCR text strings extracted from a single row of an attendance sheet.
-The columns are in order: [S. No, S. G No., Groups, UID, Name, Room No, Block]
-Your task is to fix any OCR spelling errors (especially in names or IDs like '8AI' -> 'BAI'), remove garbage characters, and output exactly the cleaned text in a strict JSON format.
-
-Input Array: {json.dumps(raw_texts)}
-
-Respond ONLY with a JSON object. Do not include markdown formatting or explanations.
-Format:
-{{
-  "S_No": "...",
-  "S_G_No": "...",
-  "Groups": "...",
-  "UID": "...",
-  "Name": "...",
-  "Room_No": "...",
-  "Block": "..."
-}}
-"""
-        payload = {
-            "model": self.model,
-            "prompt": prompt,
-            "stream": False,
-            "format": "json"
+        # Safely pad the list to 7 elements
+        padded = raw_texts + [""] * (7 - len(raw_texts))
+        
+        s_no = self.clean_sno(padded[0])
+        s_g_no = self.clean_sno(padded[1])
+        groups = self.clean_groups(padded[2])
+        uid = self.clean_uid(padded[3])
+        name = self.clean_name(padded[4])
+        room_no = self.clean_room(padded[5])
+        block = self.clean_block(padded[6])
+        
+        parsed = {
+            "S_No": s_no,
+            "S_G_No": s_g_no,
+            "Groups": groups,
+            "UID": uid,
+            "Name": name,
+            "Room_No": room_no,
+            "Block": block
         }
         
-        try:
-            logger.debug(f"Sending request to Ollama ({self.model})...")
-            response = requests.post(self.endpoint, json=payload, timeout=30)
-            response.raise_for_status()
-            data = response.json()
-            result_text = data.get("response", "").strip()
-            
-            match = re.search(r'\{.*\}', result_text, re.DOTALL)
-            if match:
-                result_text = match.group(0)
-                
-            parsed = json.loads(result_text)
-            logger.debug(f"Ollama returned: {parsed}")
-            return parsed
-            
-        except Exception as e:
-            logger.error(f"LLM formatting failed: {e}. Falling back to raw text.")
-            return {
-                "S_No": raw_texts[0] if len(raw_texts) > 0 else "",
-                "S_G_No": raw_texts[1] if len(raw_texts) > 1 else "",
-                "Groups": raw_texts[2] if len(raw_texts) > 2 else "",
-                "UID": raw_texts[3] if len(raw_texts) > 3 else "",
-                "Name": raw_texts[4] if len(raw_texts) > 4 else "",
-                "Room_No": raw_texts[5] if len(raw_texts) > 5 else "",
-                "Block": raw_texts[6] if len(raw_texts) > 6 else ""
-            }
+        logger.debug(f"RuleFormatter cleaned row: {parsed}")
+        return parsed

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from src.config.parser import AttendanceRulesConfig, OcrConfig
+from src.utils.empty_cell import CellState
 
 @dataclass
 class AttendanceDecision:
@@ -10,62 +11,58 @@ class AttendanceDecision:
 
 class AttendanceEngine:
     """
-    Implements business rules for attendance classification.
+    Implements business rules for attendance classification based on user-defined states.
     """
 
     def __init__(self, rules_config: AttendanceRulesConfig, ocr_config: OcrConfig):
         self.rules = rules_config
         self.ocr_config = ocr_config
         
-        self.present_set = {x.lower() for x in self.rules.present_marks}
-        self.absent_set = {x.lower() for x in self.rules.absent_marks}
+        self.present_set = {x.lower() for x in self.rules.present_text}
+        self.absent_set = {x.lower() for x in self.rules.absent_text}
 
-    def evaluate(self, is_empty: bool, ocr_text: str, ocr_conf: float) -> AttendanceDecision:
-        if is_empty:
+    def evaluate(self, cell_state: CellState, ocr_text: str, ocr_conf: float) -> AttendanceDecision:
+        if cell_state == CellState.BLANK:
             return AttendanceDecision(
-                status="Absent",
+                status=self.rules.blank,
                 confidence=1.0,
                 detected_text="",
-                source="Empty Cell"
+                source="Blank Cell"
             )
 
-        if not ocr_text:
-             return AttendanceDecision(
-                 status="Present",
-                 confidence=0.5,
-                 detected_text="[Signature/Handwriting]",
-                 source="Non-empty Unknown"
-             )
-             
-        if ocr_conf < self.ocr_config.confidence_threshold:
+        if cell_state == CellState.BLACK_BOX:
             return AttendanceDecision(
-                 status="Review",
-                 confidence=ocr_conf,
-                 detected_text=ocr_text,
-                 source="Low Confidence"
-            )
-
-        text_lower = ocr_text.strip().lower()
-
-        if text_lower in self.present_set:
-            return AttendanceDecision(
-                 status="Present",
-                 confidence=ocr_conf,
-                 detected_text=ocr_text,
-                 source="Rule Match"
+                status=self.rules.black_box,
+                confidence=1.0,
+                detected_text="[Black Box]",
+                source="Black Box"
             )
             
-        if text_lower in self.absent_set:
-            return AttendanceDecision(
-                 status="Absent",
-                 confidence=ocr_conf,
-                 detected_text=ocr_text,
-                 source="Rule Match"
-            )
+        # If it's CONTENT, check OCR text first
+        if ocr_text:
+            text_lower = ocr_text.strip().lower()
+            
+            if text_lower in self.present_set:
+                return AttendanceDecision(
+                    status="Present",
+                    confidence=ocr_conf,
+                    detected_text=ocr_text,
+                    source="OCR Rule Match"
+                )
+                
+            if text_lower in self.absent_set:
+                return AttendanceDecision(
+                    status="Absent",
+                    confidence=ocr_conf,
+                    detected_text=ocr_text,
+                    source="OCR Rule Match"
+                )
 
+
+        # If OCR text is empty but cell has CONTENT, or OCR didn't match a rule, assume it's a signature
         return AttendanceDecision(
-             status="Present",
-             confidence=ocr_conf,
-             detected_text=ocr_text,
-             source="Fallback (Handwriting/Name)"
+             status=self.rules.handwritten_signature,
+             confidence=0.8,
+             detected_text=ocr_text if ocr_text else "[Handwritten Signature]",
+             source="Handwriting Fallback"
         )

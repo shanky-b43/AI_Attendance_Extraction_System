@@ -8,10 +8,10 @@ class ExcelGenerator:
     Generates Excel reports for attendance results.
     """
 
-    def __init__(self, output_dir: Path):
+    def __init__(self, output_dir: Path, filename: str = "attendance_result.xlsx"):
         self.output_dir = output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
-        self.output_file = self.output_dir / "attendance_result.xlsx"
+        self.output_file = self.output_dir / filename
         self._init_workbook()
 
     def _init_workbook(self):
