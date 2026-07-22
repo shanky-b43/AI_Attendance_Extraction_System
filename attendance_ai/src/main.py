@@ -20,6 +20,7 @@ from src.ocr.llm_formatter import RuleFormatter
 from src.attendance.engine import AttendanceEngine
 from src.excel.generator import ExcelGenerator
 from src.vision.gemini_engine import GeminiVisionEngine
+from src.vision.openrouter_engine import OpenRouterVisionEngine
 import numpy as np
 
 
@@ -31,8 +32,14 @@ class AttendanceSystem:
         
         self.pdf_converter = PDFConverter(dpi=300)
         if self.config.app.use_vision_api:
-            logger.info("Vision API mode enabled. Initializing Gemini Vision engine...")
-            self.vision_engine = GeminiVisionEngine()
+            provider = self.config.app.vision_provider
+            if provider == "openrouter":
+                model = self.config.app.vision_model
+                logger.info(f"Vision API mode enabled. Initializing OpenRouter engine (model: {model})...")
+                self.vision_engine = OpenRouterVisionEngine(model=model)
+            else:
+                logger.info("Vision API mode enabled. Initializing Gemini Vision engine...")
+                self.vision_engine = GeminiVisionEngine()
         else:
             self.enhancer = ImageEnhancer()
             self.table_detector = TableDetector()

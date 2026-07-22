@@ -30,3 +30,5 @@ ocr:
 app:
   debug_mode: true
   use_vision_api: true
+  vision_provider: "openrouter"       # "openrouter" or "gemini"
+  vision_model: "google/gemma-4-31b-it:free"     # Gemma 4 31B (free tier on OpenRouter)

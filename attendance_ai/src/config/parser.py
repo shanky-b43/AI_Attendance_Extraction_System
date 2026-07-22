@@ -35,6 +35,8 @@ class OcrConfig:
 class AppConfig:
     debug_mode: bool
     use_vision_api: bool = False
+    vision_provider: str = "gemini"
+    vision_model: str = "openrouter/free"
 
 
 @dataclass
@@ -81,7 +83,9 @@ def load_config(config_path: str | Path) -> Config:
 
     app_config = AppConfig(
         debug_mode=data["app"]["debug_mode"],
-        use_vision_api=data["app"].get("use_vision_api", False)
+        use_vision_api=data["app"].get("use_vision_api", False),
+        vision_provider=data["app"].get("vision_provider", "gemini"),
+        vision_model=data["app"].get("vision_model", "openrouter/free"),
     )
 
     return Config(
