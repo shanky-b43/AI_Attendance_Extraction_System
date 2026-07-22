@@ -1,50 +1,314 @@
-# AI_Attendance_Extraction_System
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Attendance Extraction System</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --panel: #161925;
+    --border: #262b3d;
+    --text: #e4e6f0;
+    --muted: #9aa0b4;
+    --accent: #7c9eff;
+    --accent-soft: rgba(124,158,255,0.12);
+    --code-bg: #1b1f2e;
+    --success: #52c98a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: var(--accent);
+  }
+  p { color: var(--text); }
+  ul, ol {
+    padding-left: 22px;
+  }
+  li { margin-bottom: 6px; }
+  code {
+    background: var(--code-bg);
+    color: #d8e0ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "SF Mono", "Fira Code", Consolas, monospace;
+    font-size: 0.88em;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    overflow-x: auto;
+    font-family: "SF Mono", "Fira Code", Consolas, monospace;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    color: #b8c4ff;
+  }
+  .badge-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .badge {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(124,158,255,0.25);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 16px;
+  }
+  @media (max-width: 640px) {
+    .feature-grid { grid-template-columns: 1fr; }
+  }
+  .feature-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .feature-card strong {
+    display: block;
+    color: var(--text);
+    margin-bottom: 4px;
+    font-size: 0.92rem;
+  }
+  .feature-card span {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .pipeline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 12px;
+  }
+  .pipe-step {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(124,158,255,0.25);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .pipe-arrow {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .folder-tree {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-family: "SF Mono", "Fira Code", Consolas, monospace;
+    font-size: 0.85rem;
+    color: #b8c4ff;
+    white-space: pre;
+    overflow-x: auto;
+  }
+  .comment { color: var(--muted); }
+  .callout {
+    background: var(--panel);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+  .steps ol li { margin-bottom: 10px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+  }
+  th { color: var(--muted); font-weight: 600; }
+  .footer-note {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="container">
 
-An offline, production-ready AI application that automatically extracts attendance information from scanned PDF or image files and generates an Excel report.
+  <h1>AI Attendance Extraction System</h1>
+  <p class="subtitle">An offline, production-ready AI application that automatically extracts attendance information from scanned PDF or image files and generates an Excel report.</p>
 
-Features
-Offline Processing: No cloud APIs or internet connection required.
-Multi-format Support: Processes PDFs, PNGs, and JPEGs.
-Computer Vision Pipeline: Deskews images, detects tables, and extracts rows/cells automatically.
-Empty Cell Detection: Skips OCR on blank cells using pixel intensity analysis.
-OCR Engine: Uses PaddleOCR for robust offline text recognition.
-Rule Engine: Applies configurable business rules to determine Present/Absent/Review statuses.
-Debug Mode: Saves intermediate crops (tables, rows, cells) for manual verification.
-Architecture Pipeline
-Input -> PDF Converter -> Image Enhancement -> Table Detection -> Row Detection -> Cell Extraction -> Empty Cell Check -> OCR -> Rule Engine -> Excel Output
+  <div class="badge-row">
+    <span class="badge">100% Offline</span>
+    <span class="badge">PaddleOCR</span>
+    <span class="badge">Python 3.10 / 3.11</span>
+    <span class="badge">PDF · PNG · JPEG</span>
+  </div>
 
-Folder Structure
-attendance_ai/
+  <h2>Features</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <strong>Offline Processing</strong>
+      <span>No cloud APIs or internet connection required.</span>
+    </div>
+    <div class="feature-card">
+      <strong>Multi-format Support</strong>
+      <span>Processes PDFs, PNGs, and JPEGs.</span>
+    </div>
+    <div class="feature-card">
+      <strong>Computer Vision Pipeline</strong>
+      <span>Deskews images, detects tables, and extracts rows/cells automatically.</span>
+    </div>
+    <div class="feature-card">
+      <strong>Empty Cell Detection</strong>
+      <span>Skips OCR on blank cells using pixel intensity analysis.</span>
+    </div>
+    <div class="feature-card">
+      <strong>OCR Engine</strong>
+      <span>Uses PaddleOCR for robust offline text recognition.</span>
+    </div>
+    <div class="feature-card">
+      <strong>Rule Engine</strong>
+      <span>Applies configurable business rules to determine Present / Absent / Review statuses.</span>
+    </div>
+    <div class="feature-card">
+      <strong>Debug Mode</strong>
+      <span>Saves intermediate crops (tables, rows, cells) for manual verification.</span>
+    </div>
+  </div>
+
+  <h2>Architecture Pipeline</h2>
+  <div class="pipeline">
+    <span class="pipe-step">Input</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">PDF Converter</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Image Enhancement</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Table Detection</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Row Detection</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Cell Extraction</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Empty Cell Check</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">OCR</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Rule Engine</span><span class="pipe-arrow">→</span>
+    <span class="pipe-step">Excel Output</span>
+  </div>
+
+  <h2>Folder Structure</h2>
+  <div class="folder-tree">attendance_ai/
 ├── input/
-│   ├── pdfs/            # Place multi-page or single-page PDFs here
-│   └── images/          # Place JPG/PNG images here
+│   ├── pdfs/            <span class="comment"># Place multi-page or single-page PDFs here</span>
+│   └── images/          <span class="comment"># Place JPG/PNG images here</span>
 ├── output/
-│   ├── excel/           # Final attendance_result.xlsx
-│   ├── logs/            # Execution logs
-│   ├── debug/           # Full page & table debug images
-│   └── crops/           # Individual cell crops (Reg No, Name, Attendance)
-├── src/                 # Source code modules
-├── config.yaml          # Application configuration
-├── requirements.txt     # Python dependencies
-└── main.py              # Main execution script
-Installation
-Ensure you have Python 3.10 or 3.11 installed.
-Install dependencies:
-pip install -r requirements.txt
-Configuration
-All settings are stored in config.yaml.
+│   ├── excel/           <span class="comment"># Final attendance_result.xlsx</span>
+│   ├── logs/            <span class="comment"># Execution logs</span>
+│   ├── debug/           <span class="comment"># Full page & table debug images</span>
+│   └── crops/           <span class="comment"># Individual cell crops (Reg No, Name, Attendance)</span>
+├── src/                 <span class="comment"># Source code modules</span>
+├── config.yaml          <span class="comment"># Application configuration</span>
+├── requirements.txt     <span class="comment"># Python dependencies</span>
+└── main.py              <span class="comment"># Main execution script</span></div>
 
-Edit attendance_rules to define what constitutes a present/absent mark.
-Edit ocr.confidence_threshold (default 0.90) to determine when an item is flagged for Review.
-Toggle app.debug_mode to enable/disable saving of cropped cell images.
-How to Run
-Place your scanned attendance sheets in input/pdfs/ or input/images/.
-Run the main pipeline:
-python src/main.py
-Check output/excel/attendance_result.xlsx for the results.
-Troubleshooting
-PaddleOCR Installation Issues: Ensure you have the C++ build tools installed on Windows.
-No Table Detected: Check output/debug/ to see the enhanced binary image. Ensure the scanned document has visible horizontal and vertical lines.
-Future Improvements
-Add Ollama/LLM fallback for low-confidence handwriting recognition.
-Support for varying column layouts via dynamic mapping.
+  <h2>Installation</h2>
+  <p>Ensure you have Python 3.10 or 3.11 installed.</p>
+  <p>Install dependencies:</p>
+  <pre><code>pip install -r requirements.txt</code></pre>
+
+  <h2>Configuration</h2>
+  <p>All settings are stored in <code>config.yaml</code>.</p>
+  <ul>
+    <li>Edit <code>attendance_rules</code> to define what constitutes a present/absent mark.</li>
+    <li>Edit <code>ocr.confidence_threshold</code> (default <code>0.90</code>) to determine when an item is flagged for Review.</li>
+    <li>Toggle <code>app.debug_mode</code> to enable/disable saving of cropped cell images.</li>
+  </ul>
+
+  <h2>How to Run</h2>
+  <div class="steps">
+    <ol>
+      <li>Place your scanned attendance sheets in <code>input/pdfs/</code> or <code>input/images/</code>.</li>
+      <li>Run the main pipeline:
+        <pre><code>python src/main.py</code></pre>
+      </li>
+      <li>Check <code>output/excel/attendance_result.xlsx</code> for the results.</li>
+    </ol>
+  </div>
+
+  <h2>Troubleshooting</h2>
+  <table>
+    <tr><th>Issue</th><th>Fix</th></tr>
+    <tr>
+      <td>PaddleOCR Installation Issues</td>
+      <td>Ensure you have the C++ build tools installed on Windows.</td>
+    </tr>
+    <tr>
+      <td>No Table Detected</td>
+      <td>Check <code>output/debug/</code> to see the enhanced binary image. Ensure the scanned document has visible horizontal and vertical lines.</td>
+    </tr>
+  </table>
+
+  <h2>Future Improvements</h2>
+  <ul>
+    <li>Add Ollama/LLM fallback for low-confidence handwriting recognition.</li>
+    <li>Support for varying column layouts via dynamic mapping.</li>
+  </ul>
+
+  <div class="footer-note">
+    AI_Attendance_Extraction_System — offline OCR-based attendance pipeline.
+  </div>
+
+</div>
+</body>
+</html>
