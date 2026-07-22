@@ -1,7 +1,4 @@
-venv_310/
 aienv/
-aienv310/
-myvenv/
 .env
 __pycache__/
 *.pyc
